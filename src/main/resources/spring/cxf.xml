@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel-cxf="http://camel.apache.org/schema/cxf"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
+    ">
+
+    <camel-cxf:cxfEndpoint
+            address="http://localhost:8088/mockFakeFlexicubeSOAP" serviceClass="org.example.fakeflexicube.FakeFlexicube"
+            id="soapClient" wsdlURL="wsdl/FakeFlexicube.wsdl">
+        <!--<camel-cxf:properties>-->
+            <!--<entry key="dataFormat" value="MESSAGE" />-->
+        <!--</camel-cxf:properties>-->
+    </camel-cxf:cxfEndpoint>
+</beans>

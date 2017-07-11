@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fak="http://www.example.org/FakeFlexicube/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <fak:FakeElement>
+            <!--You may enter ANY elements at this point-->
+        </fak:FakeElement>
+    </soapenv:Body>
+</soapenv:Envelope>

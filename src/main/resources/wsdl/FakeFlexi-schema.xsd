@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://www.example.org/FakeFlexicube/" xmlns:tns="http://www.example.org/FakeFlexicube/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="FakeElement" type="tns:NewType"></xsd:element>
+    <xsd:complexType name="NewType">
+        <xsd:sequence>
+            <xsd:any></xsd:any>
+        </xsd:sequence></xsd:complexType>
+    <xsd:element name="CreateTxnAsyncResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="out" type="xsd:string"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="CreateTransactionFault">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="CreateTxnAsyncFault"
+                             type="xsd:string">
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
